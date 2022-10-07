@@ -2,8 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 import Header from "../components/Header";
+import MainImage from "../components/MainImage";
 import Menu from "../components/Menu";
 import SubMenu from "../components/SubMenu";
+import Footer from "../components/Footer";
 
 function Main() {
   return (
@@ -11,11 +13,8 @@ function Main() {
       <Header />
       <SubMenu />
       <Menu />
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
+      <MainImage />
+      <Footer />
     </MainDisplay>
   );
 }
@@ -23,7 +22,6 @@ function Main() {
 const MainDisplay = styled.div`
   width: 100%;
   height: 100%;
-  border: 1px solid red;
 `;
 
 export default Main;
